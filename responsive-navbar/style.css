@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: #000000;
+    background-image: url(bckgrd.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    font-size: 20px;
+    margin: 20px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    margin: 20px 30px;
+}
+
+.nav-links{
+    height: 100%;
+}
+
+.nav-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links  li a{
+    display: block;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.nav-links li a:hover{
+    scale: 1.2;
+    color: #ffacac;
+    transition: all .2s ease;
+}
+
+/* menu icon */
+.menu-button{
+    position: absolute;
+    top: 20px;
+    right: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+    
+}
+.menu-bars{
+    height: 3px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* SIDE LINKS */
+.side-links{
+    position: absolute;
+    bottom: 15px;
+    right: 40px;
+}
+.side-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 200px;
+    color: #ffffff;
+    padding: 10px 0;
+    border-radius: 12px;
+}
+.side-link-text{
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.side-link-youtube{
+    background-color:#ff0000;
+    color: fff;
+}
+.side-link-medium{
+    background-color:#f9be32;
+    color: #fff;
+}
+.side-link-linkedin{
+    background-color:#0a66c2;
+    color: #fff;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links{
+        width: 100%;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(20px);
+    }
+
+    .nav-links ul{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links ul  li{
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .nav-links ul li a{
+        padding: 8px 16px;
+    }
+
+
+    .nav-links.active{
+        display: flex;
+    }
+
+    .menu-button{
+        display: flex;
+    }
+    
+}
