@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  height: 80px;
+  padding: 0 50px;
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #fff;
+  border-radius: 20px;
+}
+nav .logo a img {
+  width: 200px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin-left: 30px;
+}
+nav ul li a {
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #6c757d;
+}
+nav .cta button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #6c757d;
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #fff;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+nav .cta button:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 4px #bebebe, -2px -2px 4px #ffffff;
+  background-color: #da6f2d;
+  color: #f0f0f0;
+}
+.hero {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #6c757d;
+}
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  z-index: 999;
+  transition: 0.3s ease;
+}
+.close {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #bebebe, -8px -8px 16px #fff;
+  padding: 20px 40px;
+}
+.modal h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #bebebe, -2px -2px 4px #fff;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal form label {
+  width: 300px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px #bebebe, -2px -2px 4px #fff;
+}
+.modal form input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #fff;
+}
+.modal form button[type="submit"] {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 4px 4px 8px #bebebe, -4px -4px 8px #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 4px #bebebe, -2px -2px 4px #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.modal form button[type="submit"]:hover {
+  transform: translate(2px, 2px);
+  background-color: #d6d6d6;
+  box-shadow: 2px 2px 4px #bebebe, -2px -2px 4px #fff;
+}
+.modal p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 2px 2px 4px #bebebe, -2px -2px 4px #fff;
+}
+/* Modal links styles */
+.modal-link {
+  color: #06c;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-link:hover {
+  color: #049;
+  text-decoration: underline;
+}
+.navbar-toggle {
+  display: none;
+}
+/* Responsive design */
+@media only screen and (max-width: 668px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-links {
+    display: none;
+  }
+  .navbar-toggle span {
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    background-color: #bebebe;
+    border-radius: 5px;
+  }
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+  }
+  nav .logo a img {
+    width: 100px;
+  }
+  .modal-container {
+    width: 350px;
+    /* you can the screen size for the media query depending on your use case. */
+  }
+}
