@@ -1,5 +1,7 @@
 # RESPONSIVE NAVIGATION BAR TUTORIAL | HTML CSS JS
 
+> Watch the tutorial here: https://youtu.be/vlkrUC-xJak
+
 My take on making a responsive navigation bar in 2023 with media queries and a bit of animations and javascript. In this tutorial we are going to learn media queries, animations, basic javascript toggling, building a burger menu with css and more!
 
 
