@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  background: linear-gradient(to right, #3bd6ce 50%, #ffffff 50%);
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+.nav-container nav ul {
+  display: flex;
+}
+.nav-container nav li {
+  margin-right: 20px;
+}
+.nav-container a {
+  font-size: 1.2rem;
+  color: #000000;
+}
+.button {
+  background-color: #5ec2c8;
+  padding: 8px 10px;
+  color: #ffffff !important;
+  border-radius: 5px;
+}
+/* Hero */
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Hero Left */
+.hero-left {
+  width: 50%;
+  padding: 40px;
+}
+.hero-left h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.hero-left span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.hero-left p {
+  inline-size: 450px;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.btns-button {
+  background-color: #c0a24f;
+  margin-right: 20px;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+.btns a {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+/* Hero Right */
+.hero-right {
+  width: 50%;
+  padding: 40px;
+}
+.right-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.right-top .rtop-img {
+  width: 80%;
+}
+.right-top .soc-icons {
+  display: flex;
+  flex-direction: column;
+  background-color: #3bd6ce;
+  align-items: center;
+  border-radius: 20px;
+  margin-left: 40px;
+}
+.right-top .soc-icons img {
+  width: 32px;
+  padding: 10px;
+}
+.right-bottom .give-icon {
+  width: 10%;
+}
+
+.right-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.cta-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.right-bottom .cta p {
+  inline-size: 80px;
+  text-align: right;
+}
+.right-bottom .cta span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #3bd6ce;
+}
